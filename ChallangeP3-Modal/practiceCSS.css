@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: Calibri, 'Gill Sans';
+  /* border: 0.1px solid yellow; */
+  box-sizing: inherit;
+}
+html {
+  /* background-color: rgb(159, 233, 159); */
+  box-sizing: border-box; /* very important */
+}
+body {
+  /* display: flex; */
+  /* align-items: flex-start; */
+  text-align: center;
+  background-color: rgb(159, 233, 159);
+  line-height: 1.5;
+  position: relative;
+  height: 100vh;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.clicks {
+  border: 1px solid blue;
+  border-radius: 7%;
+  padding: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: rgb(173, 191, 207);
+  font-weight: 600;
+}
+.clicks:hover {
+  cursor: pointer;
+  color: red;
+}
+.clicks:focus {
+  background-color: rgb(224, 191, 153);
+}
+.hiddenText {
+  display: none;
+}
+.modal {
+  position: absolute; /* very important */
+  text-align: left;
+  margin: 5%;
+  padding: 2%;
+  color: rgb(206, 21, 122);
+  background-color: rgb(226, 216, 223);
+  border-radius: 1rem;
+  transform: translate(0%, -15%);
+  box-shadow: 0.3rem 0.3rem rgb(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.closeButton {
+  position: absolute; /* very important */
+  cursor: pointer;
+  top: 0.2rem;
+  right: 1rem;
+  border: none;
+  font-size: 2rem;
+  background: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+p {
+  font-weight: bold;
+}

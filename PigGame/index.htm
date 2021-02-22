@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PIG Game</title>
+  </head>
+  <body onload="onLoadFunct()">
+    <head>
+      <h1>THE PIG GAME</h1>
+    </head>
+    <main class="flex-container">
+      <section class="sections sect--0 activePlayer">
+        <h2>Player 1</h2>
+        <div class="tSDiv">
+          <p>Total:</p>
+          <p id="p0--Total" class="activeTotal">20</p>
+        </div>
+        <div class="cSDiv">
+          <p>CURRENT:</p>
+          <p id="p0--Current" class="activeCurrent">25</p>
+        </div>
+      </section>
+      <section class="sections sect--1">
+        <h2>Player 2</h2>
+        <div class="tSDiv">
+          <p>Total:</p>
+          <p id="p1--Total">50</p>
+        </div>
+        <div class="cSDiv">
+          <p>CURRENT:</p>
+          <p id="p1--Current" class="switchCurrentPlayer1">55</p>
+        </div>
+      </section>
+
+      <div class="realStuff">
+        <img src="roll-6.png" class="dice hidden" />
+        <button class="btn newGame">NEW GAME</button>
+        <button class="btn rollD">ROLL DICE</button>
+        <button class="btn holdD">HOLD</button>
+      </div>
+    </main>
+    <footer>
+      <h3>Enjoy the game! ;)</h3>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
